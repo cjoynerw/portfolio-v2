@@ -35,3 +35,36 @@ nav {
     left: 50%;
     transform: translate(-50%, -40%);
 }
+.intro {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-text {
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+}
+.slider {
+    background: darkblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translatey(100%);
+}
+.hide {
+    background: black;
+    overflow: hidden;
+}
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
+}
