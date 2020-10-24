@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    font-family: 'Courier New', Courier, monospace;
+}
+.landing {
+    min-height: 100vh;
+    background: cadetblue;
+    padding: 0rem 5rem;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+.nav-links li {
+    padding-left: 10rem;
+    font-size: 1.2rem;
+}
+#logo {
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+.big-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
