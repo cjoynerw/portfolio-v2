@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 main {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Raleway', sans-serif;
 }
 .landing {
     min-height: 100vh;
@@ -12,18 +12,36 @@ main {
     padding: 0rem 5rem;
 }
 nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     min-height: 10vh;
 }
 .nav-links {
     display: flex;
+    flex-direction: column;
     list-style: none;
+    justify-content: center;
+    align-items: center;
 }
 .nav-links li {
-    padding-left: 10rem;
+    padding-top: 1vh;
     font-size: 1.2rem;
+}
+.nav-links li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: ease 0.5s;
+    padding: 2px;
+}
+.nav-links li a:hover {
+    color: white;
+    background-color: black;
 }
 #logo {
     font-weight: lighter;
@@ -31,9 +49,13 @@ nav {
 }
 .big-text {
     position: absolute;
-    top: 40%;
+    bottom: 2%;
     left: 50%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -2%);
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    width: 100%;
+    text-align: center;
 }
 .intro {
     background: black;
@@ -47,12 +69,12 @@ nav {
     align-items: center;
 }
 .intro-text {
-    color: blue;
-    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-family: 'Raleway', sans-serif;
     font-size: 3rem;
 }
 .slider {
-    background: darkblue;
+    background: black;
     position: fixed;
     top: 0;
     left: 0;
