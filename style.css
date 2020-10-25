@@ -3,9 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-main {
-    font-family: 'Raleway', sans-serif;
-}
+/* main {
+    
+} */
 .landing {
     min-height: 100vh;
     background: cadetblue;
@@ -38,6 +38,7 @@ nav {
     text-decoration: none;
     transition: ease 0.5s;
     padding: 2px;
+    font-family: 'Raleway', sans-serif;
 }
 .nav-links li a:hover {
     color: white;
@@ -89,4 +90,59 @@ nav {
 .hide span {
     transform: translateY(100%);
     display: inline-block;
+}
+
+/* Projects Section */
+.projects {
+    min-height: 100vh;
+    width: 100%;
+}
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
+
+
+  /* About Section */
+.about {
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+  /* Contact Section */
+.contact {
+    min-height: 100vh;
+    width: 100%;
 }
