@@ -8,12 +8,24 @@ tl.to('.intro', { y: '-100%', duration: 1 }, '-=1')
 tl.fromTo('nav', { opacity: 0 }, { opacity: 1, duration: 1 })
 tl.fromTo('.big-text', { opacity: 0 }, { opacity: 1, duration: 1 })
 
+
+// Navbar on scroll
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
+
+
 // Smooth Scrolling animations
 function smoothScroll(target, duration) {
     var target = document.querySelector(target);
     var targetPosition = target.getBoundingClientRect().top;
     var startPosition = window.pageYOffset;
-    // var distance = targetPosition - startPosition;
     var startTime = null;
 
     function animation(currentTime){
@@ -33,16 +45,15 @@ function smoothScroll(target, duration) {
 
     requestAnimationFrame(animation);
 }
-// var section1 = document.querySelector('.page-one');
+var section1 = document.querySelector('.page-one');
 var section2 = document.querySelector('.page-two');
 var section3 = document.querySelector('.page-three');
 var section4 = document.querySelector('.page-four');
-// var section5 = document.querySelector('.a');
-// var section6 = document.querySelector('.arrowdown')
 
-// section1.addEventListener('click', function(){
-//     smoothScroll('.landing', 1000)
-// })
+
+section1.addEventListener('click', function(){
+    smoothScroll('.landing', 1000)
+})
 
 section2.addEventListener('click', function(){
     smoothScroll('.projects', 1000)
@@ -56,12 +67,32 @@ section4.addEventListener('click', function(){
     smoothScroll('.contact', 1000)
 })
 
-// section5.addEventListener('click', function(){
-//     smoothScroll('.box1', 1000)
-// })
-// section6.addEventListener('click', function(){
-//     smoothScroll('.box2', 1000)
-// })
+var section2 = document.querySelector('.land-one');
+var section3 = document.querySelector('.land-two');
+var section4 = document.querySelector('.land-three');
+
+section2.addEventListener('click', function(){
+  smoothScroll('.projects', 1000)
+})
+
+section3.addEventListener('click', function(){
+  smoothScroll('.about', 1000)
+})
+
+section4.addEventListener('click', function(){
+  smoothScroll('.contact', 1000)
+})
+
+
+// Bkg Changer
+function bgChanger() {
+  if(this.scrollY > this.innerHeight / 2) {
+    document.body.classList.add('bg-active');
+  } else {
+    document.body.classList.remove('bg-active')
+  }
+}
+
 
 // Collapsible Project tabs
 var coll = document.getElementsByClassName("collapsible");
