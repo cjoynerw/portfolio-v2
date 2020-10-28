@@ -22,6 +22,7 @@
   padding: 15px;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
+  transition: 0.5s ease;
 }
 #navbar a:hover {
   background-color: #ddd;
@@ -302,7 +303,27 @@ img {
 
   /* Contact Section */
 .contact {
-    min-height: 100vh;
+    min-height: 50vh;
     width: 100%;
-    background: rgb(74, 123, 124)
+    background: rgb(74, 123, 124);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+.contact a {
+  width: 10rem;
+  color: blue;
+  margin: 3px;
+  padding: 3px;
+  text-decoration: none;
+  border: 1px solid blue;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+.contact a:hover {
+  border: 1px solid white;
+  color: white;
 }
