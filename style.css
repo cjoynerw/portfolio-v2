@@ -146,8 +146,43 @@ nav {
   flex-shrink: 1;
   flex-basis: 0;
 }
+.projects h1, h2 {
+  padding: 0 0 10px 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+}
+.projects h1 {
+  font-size: xx-large;
+}
+.projects h2 {
+  font-size: x-large;
+}
+#projects-greet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#proj-email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  text-decoration: none;
+  border-radius: 90px;
+  width: 5em;
+  font-family: 'Raleway', sans-serif;
+  padding: 5px;
+  transition: 0.5s ease;
+  margin: 0 0 5px 0;
+  font-weight: lighter;
+}
+#proj-email:hover {
+  color: white;
+}
 img {
   width: 20em;
+  border-radius: 5px 5px 0 0;
 }
 .collapsible {
     background-color: #777;
@@ -160,6 +195,7 @@ img {
     outline: none;
     font-size: 15px;
     transition: 0.5s ease;
+    border-radius: 0 0 5px 5px;
 }
   
   .active, .collapsible:hover {
@@ -194,6 +230,73 @@ img {
     min-height: 100vh;
     width: 100%;
     background: cadetblue;
+    padding: 10vh 0 10vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#about-greet {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  margin: 0 10vw 0 10vw;
+}
+#about-greet h1 {
+  margin-bottom: 15px;
+  font-size: xx-large;
+}
+#about-greet p {
+  font-size: larger;
+  margin-bottom: 10vh;
+}
+.tech {
+  width: 80vw;
+  text-align: center;
+}
+#tech-greet {
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+}
+#tech-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.list {
+  list-style: none;
+}
+#front-end {
+  background: rgb(231, 231, 231);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 15rem;
+}
+#back-end {
+  background: rgb(231, 231, 231);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 15rem;
+}
+#additional {
+  background: rgb(231, 231, 231);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 15rem;
+}
+#front-end h2 {
+  text-decoration: underline;
+}
+#back-end h2 {
+  text-decoration: underline;
+}
+#additional h2 {
+  text-decoration: underline;
 }
 
 
