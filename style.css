@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-weight: lighter;
 }
 
 
@@ -182,7 +183,8 @@ nav {
   color: white;
 }
 img {
-  width: 20em;
+  max-width: 20rem;
+  max-height: 10rem;
   border-radius: 5px 5px 0 0;
 }
 .collapsible {
