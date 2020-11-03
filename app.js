@@ -21,6 +21,17 @@ function scrollFunction() {
 }
 
 
+// Mobile Responsive Hamburger
+function hamburger() {
+  var x = document.getElementById("navbar");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
 // Smooth Scrolling animations
 function smoothScroll(target, duration) {
     var target = document.querySelector(target);

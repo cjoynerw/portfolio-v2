@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-weight: lighter;
+    font-family: 'Raleway', sans-serif;
 }
 
 
@@ -29,11 +30,15 @@
   background-color: #ddd;
   color: black;
 }
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   #navbar {
     justify-content: center;
   }
+} */
+.topnav .icon {
+  display: none;
 }
+
 
 
 /* Landing Page */
@@ -147,6 +152,8 @@ nav {
   margin: 1vh;
   flex-shrink: 1;
   flex-basis: 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.445);
+  height: 100%;
 }
 .projects h1, h2 {
   padding: 0 0 10px 0;
@@ -184,25 +191,22 @@ nav {
 }
 img {
   max-width: 20rem;
-  max-height: 10rem;
-  border-radius: 5px 5px 0 0;
 }
 .collapsible {
-    background-color: #777;
+    background-color: black;
     color: white;
     cursor: pointer;
     padding: 18px;
-    max-width: 70vw;
+    max-width: 20rem;
     border: none;
     text-align: left;
     outline: none;
     font-size: 15px;
     transition: 0.5s ease;
-    border-radius: 0 0 5px 5px;
 }
   
   .active, .collapsible:hover {
-    background-color: #555;
+    background-color: cadetblue;
   }
   
   .collapsible:after {
@@ -223,9 +227,19 @@ img {
     transition: 0.2s ease-out;
     background-color: #e4e4e4;
   }
+  .content a {
+    color: blue;
+    text-decoration: none;
+    padding: 2px;
+    transition: 0.5s ease;
+  }
+  .content a:hover {
+    text-decoration: underline;
+  }
   .bg-active {
     background-color: white;
   }
+  
 
 
   /* About Section */
@@ -328,4 +342,25 @@ img {
 .contact a:hover {
   border: 1px solid white;
   color: white;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    /* position: absolute;
+    right: 0;
+    top: 0; */
+  }
+  .topnav.responsive a {
+    display: block;
+    text-align: left;
+  }
 }
